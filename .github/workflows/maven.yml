@@ -30,7 +30,7 @@ jobs:
    # - name: Build with Maven
    #   run: mvn clean install
     - name: Make chromedriver executable
-      run: chmod +x /path/to/chromedriver
+      run: chmod +x /src/main/java/iLab_Assessment/resources/drivers/chromedriver.exe
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
    # - name: Update dependency graph
