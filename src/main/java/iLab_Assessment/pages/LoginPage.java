@@ -32,6 +32,10 @@ public class LoginPage extends BasePage {
         return click(login.getLoginBtn());
     }
 
+//    public boolean click_login_btn() {
+//        return click_element(("login"));
+//    }
+
     public boolean click_registration_link() {
         return click(login.getRegistration_link());
     }

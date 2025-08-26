@@ -40,6 +40,25 @@ public class BasePage {
         return false;
     }
 
+//    public boolean click_element(String attributeValue) {
+//        if(findElement(element_(attributeValue))) {
+//            element_(attributeValue).click();
+//            return true;
+//        }
+//        return false;
+//    }
+//
+//    public boolean findElement(WebElement element) {
+//        if(element.isDisplayed()) {
+//            return element.isEnabled();
+//        }
+//        return false;
+//    }
+//
+//    public WebElement element_(String attributeValue) {
+//        return driver.findElement(By.xpath("//*[@*='"+attributeValue+"']"));
+//    }
+
     public String getText(By element) throws InterruptedException {
         Thread.sleep(5000);
         if (element_is_displayed_and_enabled(element)) {
@@ -75,9 +94,7 @@ public class BasePage {
         return false;
     }
 
-    public void wait_() throws InterruptedException {
+    public void wait_() {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
     }
-
-
 }

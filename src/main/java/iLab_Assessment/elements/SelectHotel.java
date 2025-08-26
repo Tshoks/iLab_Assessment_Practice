@@ -8,9 +8,9 @@ import java.util.List;
 
 public class SelectHotel {
 
-    private WebDriver driver;
+    private final WebDriver driver;
     private final By select_hotel_label = By.className("login_title");
-    private final By select_radioBtn = By.id("radiobutton_0");
+    private final By select_radioBtn = By.id("radiobutton_2");
     private final By continueBtn = By.id("continue");
     private final By cancelBtn = By.id("cancel");
 

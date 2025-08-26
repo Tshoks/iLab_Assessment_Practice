@@ -1,6 +1,5 @@
 package iLab_Assessment;
 
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -10,7 +9,8 @@ import org.junit.runner.RunWith;
         features = {"src/test/java/iLab_Assessment/featureFiles"},
         glue = {"iLab_Assessment/stepDefinitions"},
         monochrome = true,
-        tags = "@PositiveLogin or @ListOfHotelsInLocation or @IterateHotelList",
+        tags = "@PositiveLogin or @ListOfHotelsInLocation or @IterateHotelList or @SelectHotel",
         plugin = {"pretty", "html:reports/report.html"})
 public class TestRunner {
+
 }

@@ -35,7 +35,12 @@ public class SelectHotelSteps extends BaseSteps {
     }
 
     @Then("I print the hotel names")
-    public void i_print_the_hotel_names() throws InterruptedException {
+    public void i_print_the_hotel_names() {
         selectHotelPage.print_hotel_names("London");
+    }
+
+    @When("^I select the (.*) from the table$")
+    public void iSelectTheHotelHotelFromTheTable(String hotel) {
+        Assert.assertTrue("Unable to select the hotel.", selectHotelPage.select_hotel());
     }
 }
